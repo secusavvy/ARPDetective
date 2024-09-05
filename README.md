@@ -1,6 +1,6 @@
 **ARPDetective**
 
-ARPDetective is a  designed to scan your local network and discover active IP addresses along with their associated MAC addresses. Ideal for network administrators, and security professionals, this tool helps in network management, troubleshooting, and security assessments.
+ARPDetective is a Python script designed to scan your local network and discover active IP addresses along with their associated MAC addresses. Ideal for network administrators, and security professionals, this tool helps in network management, troubleshooting, and security assessments.
 
 ### Features
 
