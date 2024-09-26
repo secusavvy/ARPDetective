@@ -4,6 +4,17 @@ import scapy.all as scapy
 import argparse
 
 def scan(ip):
+    asciiart = r"""
+  ___  __________________     _            _   _           
+ / _ \ | ___ \ ___ \  _  \   | |          | | (_)          
+/ /_\ \| |_/ / |_/ / | | |___| |_ ___  ___| |_ ___   _____ 
+|  _  ||    /|  __/| | | / _ \ __/ _ \/ __| __| \ \ / / _ \
+| | | || |\ \| |   | |/ /  __/ ||  __/ (__| |_| |\ V /  __/
+\_| |_/\_| \_\_|   |___/ \___|\__\___|\___|\__|_| \_/ \___|
+
+    """
+    print(asciiart)
+    
     arp_request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     arp_request_broadcast = broadcast/arp_request
